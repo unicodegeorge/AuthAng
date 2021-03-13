@@ -1,0 +1,9 @@
+<form>
+  <input type="text" name="username" [(ngModel)]="username">
+  <input type="password" name="password" [(ngModel)]="password">
+  <input type="submit" class="btn" value="log in" (click)="logIn()">
+
+  <div *ngIf="loginIncorrect">
+    <p style="color: red">Login incorrect</p>
+  </div>
+</form>
